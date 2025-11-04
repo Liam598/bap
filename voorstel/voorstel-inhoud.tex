@@ -15,70 +15,209 @@
 \section{Inleiding}%
 \label{sec:inleiding}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+\subsection{Kadering van het thema}
+De \textcolor{orange}{energiesector} vormt een essentieel onderdeel van de moderne samenleving en behoort tot de kritieke infrastructuren die onmisbaar zijn voor de maatschappij. Door de toenemende digitalisering van operationele systemen en de groei van cyberdreigingen staan energiebedrijven vandaag onder grote druk om hun beveiligingsniveau te versterken. De recente \textcolor{orange}{Europese NIS2-richtlijn} (Network and Information Security Directive 2) verplicht organisaties binnen deze sector om aantoonbaar maatregelen te nemen op het vlak van \textcolor{orange}{cybersecurity}, risicobeheer en incidentmanagement. Hoewel de richtlijn duidelijke doelstellingen beduidt, blijft voor veel bedrijven onduidelijk hoe ze deze concreet moeten aanpakken.
 
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
+\subsection{Doelgroep}
+De doelgroep van dit onderzoek bestaat uit IT-professionals {cybersecurityverantwoordelijken en beleidsmakers binnen de \textcolor{orange}{energiesector} die verantwoordelijk zijn voor het opzetten van compliant beveiligings- en beheersprocessen. Deze professionals hebben nood aan een plan dat hen helpt om aan de eisen van de NIS2-richtlijn te voldoen.
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+\subsection{Probleemstelling en onderzoeksvraag}
+Veel organisaties binnen de energiesector erkennen de noodzaak van \textcolor{orange}{NIS2-conformiteit}, maar beschikken niet over een duidelijk \textcolor{orange}{implementatieplan} om dit effectief te realiseren. Daardoor lopen ze het risico op het onvoldoende naleveb van de regelgeving en verhoogde kwetsbaarheid tegenover cyberaanvallen.
 
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+De centrale onderzoeksvraag van deze bachelorproef luidt:
+\begin{quote}
+    \textbf{Hoe kan een energiebedrijf een implementatieplan opstellen om te voldoen aan de NIS2-richtlijn?}
+\end{quote}
 
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+\subsection{Onderzoeksdoelstelling}
+Het doel van deze bachelorproef is het ontwikkelen van een praktisch en toepasbaar \textcolor{orange}{implementatieplan} dat energiebedrijven ondersteunt bij hun traject naar NIS2-conformiteit.
 
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+\vspace{0.5cm}Hiervoor wordt eerst een \textcolor{orange}{literatuurstudie} uitgevoerd naar de bepalingen van de NIS2-richtlijn en rekeninghoudende met relevante beveiligingsstandaarden zoals ISO 27001 en IEC 62443. 
+
+\vspace{0.5cm}
+
+Vervolgens wordt een analyse gemaakt van de huidige beveiligingspraktijken binnen de energiesector en worden er gaten geïdentificeerd in functie van de NIS2-vereisten. Op basis van deze bevindingen wordt een concreet \textcolor{orange}{implementatieplan} uitgewerkt met toepasselijke aanbevelingen.
+
+\vspace{0.5cm}
+
+Het verwachte eindresultaat is een uitvoerbaar en herbruikbaar implementatiekader dat bedrijven binnen de energiesector kunnen gebruiken als leidraad om hun \textcolor{orange}{cyberscompliance} te verhogen en aantoonbaar NIS2-conform te worden. Deze bachelorproef is geslaagd wanneer dit kader praktisch toepasbaar blijkt binnen een realistische bedrijfscontext en bijdraagt aan de versterking van veiligheid in de energiesector.
+
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Literatuurstudie}%
 \label{sec:literatuurstudie}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+\subsection{Inleiding tot de NIS2-richtlijn}
 
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+De Europese richtlijn \textcolor{orange}{Network and Information Security 2} (\textcolor{orange}{NIS2}), gepubliceerd in december 2022, vormt een belangrijk keerpunt in het Europese beleid rond cyberveiligheid. De richtlijn heeft tot doel om in alle lidstaten een uniform en hoog niveau van informatiebeveiliging te realiseren. Tegen \textcolor{orange}{17 oktober 2024} moet NIS2 in Belgische wetgeving zijn omgezet, waardoor een groter aantal organisaties – waaronder energiebedrijven, overheidsinstellingen, financiële instellingen en IT-dienstverleners – aan strengere eisen zal moeten voldoen. \autocite{ccb_nis2}
 
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+\subsection{Waarom NIS2 ingevoerd is}
+De invoering van NIS2 is een rechtstreeks antwoord op de toenemende \textcolor{orange}{cyberdreigingen} en de groeiende afhankelijkheid van digitale infrastructuren. Waar de oorspronkelijke NIS-richtlijn (uit 2016) te beperkt en te vaag was in haar toepassing, biedt NIS2 een veel breder en concreter kader. De richtlijn verplicht organisaties om risico’s te beheren op het vlak van \textcolor{orange}{beschikbaarheid}, \textcolor{orange}{betrouwbaarheid} en \textcolor{orange}{integriteit} van hun netwerk- en informatiesystemen. Daarbij ligt de nadruk niet enkel op technische beveiligingsmaatregelen, maar ook op organisatorische en juridische verantwoordelijkheden. \Autocite{DeGroote}
 
-% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
-% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
-%   geen onderdeel is van de zin.
-% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
-%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
-%   ...'')
+\subsection{Waarom NIS2 Relevant is}
+NIS2 is relevant voor de volledige organisatie, niet enkel voor de IT-afdeling. Het vraagt om een benadering van beveiliging waarin zowel het management, de operationele teams als externe partners betrokken zijn. Elke organisatie wordt geacht om zelf actie te ondernemen om conformiteit te bereiken. Daarbij vormt \textcolor{orange}{risicobeheer} de basis: het identificeren van kwetsbaarheden, het treffen van preventieve maatregelen en het opstellen van een duidelijk \textcolor{orange}{incident response plan}. \autocite{ECSO2025}
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+\subsection{Richtlijnen NIS2}
+De richtlijn bevat bovendien een reeks \textcolor{orange}{minimumvereisten} voor informatiebeveiliging. Deze omvatten onder meer beleidslijnen rond \textcolor{orange}{risicoanalyse}, \textcolor{orange}{incidentbeheer}, \textcolor{orange}{bedrijfscontinuïteit}, \textcolor{orange}{toeleveringsketenbeveiliging}, \textcolor{orange}{cryptografie}, personeelsveiligheid en het gebruik van \textcolor{orange}{multifactor-authenticatie}. Ook de meldplicht bij ernstige beveiligingsincidenten is aangescherpt: organisaties moeten binnen \textcolor{orange}{24 uur} een eerste melding doen aan het \textcolor{orange}{Centrum voor Cybersecurity België (CCB)}, gevolgd door een gedetailleerd rapport binnen 72 uur. \autocite{ccb_nis2}
+
+\subsection{Impact op bedrijven}
+Een opvallend element in NIS2 is de nadruk op \textcolor{orange}{bestuurlijke verantwoordelijkheid}. Leidinggevenden en bestuursleden moeten niet alleen toezien op de implementatie van beveiligingsmaatregelen, maar kunnen ook persoonlijk aansprakelijk worden gesteld bij nalatigheid. Dit benadrukt dat cybersecurity niet langer een puur technische kwestie is, maar een essentieel onderdeel van de bedrijfsstrategie.
+\subsection{Relevantie NIS2 met energie sector}
+Voor sectoren zoals \textcolor{orange}{energie} is de implementatie van NIS2 bijzonder belangrijk. De energiesector wordt beschouwd als een \textcolor{orange}{zeer kritieke sector}, aangezien verstoringen daar directe gevolgen kunnen hebben voor de maatschappij. Energiebedrijven zullen dus moeten investeren in zowel technologische beveiliging als bewustwording bij medewerkers om hun \textcolor{orange}{cyberweerbaarheid} te versterken. \autocite{Linderoth2024}
+
+
+\subsection{Belangrijkste verplichtingen binnen NIS2}
+De \textcolor{orange}{NIS2-richtlijn} legt een reeks kernverplichtingen op aan organisaties die onder haar toepassingsgebied vallen. Deze verplichtingen zijn ontworpen om de weerbaarheid van essentiële en belangrijke entiteiten, zoals energiebedrijven, te versterken tegen cyberdreigingen. De richtlijn benadrukt een proactieve aanpak van beveiliging, waarbij preventie, detectie en reactie centraal staan. Voor de energiesector vertaalt dit zich in vier hoofdgebieden: \textcolor{orange}{risicobeheer}, \textcolor{orange}{incidentdetectie}, \textcolor{orange}{governance} en \textcolor{orange}{leveranciersbeheer}. \autocite{PwC2025NIS2}
+
+\subsubsection{Risicobeheer en beveiligingsmaatregelen}
+Organisaties worden verplicht om een systematisch proces voor \textcolor{orange}{risicobeheer} te implementeren. Dit houdt in dat ze potentiële bedreigingen en kwetsbaarheden moeten identificeren, de kans en impact van incidenten evalueren, en gepaste beveiligingsmaatregelen invoeren. In de energiesector betekent dit onder andere het beveiligen van \textcolor{orange}{operationele technologie (OT)} en \textcolor{orange}{industriële controlesystemen (ICS)}, het segmenteren van netwerken en het waarborgen van de beschikbaarheid van kritieke systemen. \autocite{Linderoth2024} 
+
+
+\subsubsection{Incidentdetectie en melding}
+Een essentieel onderdeel van NIS2 is de verplichting tot \textcolor{orange}{incidentdetectie en -melding}. Energiebedrijven moeten beschikken over een geautomatiseerd en goed gedocumenteerd proces om beveiligingsincidenten tijdig te identificeren en te rapporteren. \autocite{Nis2_Directive}
+
+\subsection{Governance en verantwoordingsplicht}
+De richtlijn legt een sterke nadruk op \textcolor{orange}{governance}. Het management en de raad van bestuur dragen expliciet verantwoordelijkheid voor het naleven van de NIS2-vereisten. Bestuursleden moeten actief toezicht houden op de uitvoering van beveiligingsmaatregelen en beschikken over voldoende kennis van cybersecurityrisico’s. \autocite{Linderoth2024}
+
+\subsection{Leveranciersbeheer en toeleveringsketen}
+Een van de belangrijkste vernieuwingen van NIS2 is de aandacht voor de \textcolor{orange}{toeleveringsketen}. Organisaties moeten ervoor zorgen dat ook hun leveranciers en dienstverleners voldoen aan voldoende beveiligingsstandaarden. 
+\autocite{hubspot}
+
+\subsection{Bestaande raamwerken en richtlijnen voor NIS2-implementatie}
+Bestaande kaders en richtlijnen zoals \textbf{ISO 27001}, \textbf{IEC 62443}, het \textbf{NIST Cybersecurity Framework} en aanbevelingen van \textbf{ENISA} kunnen organisaties ondersteunen bij het naleven van de NIS2-richtlijn. Hieronder wordt per kader uitgelegd hoe dit werkt.
+
+\subsubsection{ISO 27001}
+\begin{itemize}
+    \item \textbf{Wat het is:} Internationale norm voor het opzetten, implementeren en onderhouden van een Information Security Management System (ISMS).
+    \item \textbf{Relevantie voor NIS2:} Biedt een gestructureerde aanpak voor risicobeheer, incidentmanagement, beleid en bewustwordingstrainingen, wat aansluit bij NIS2-verplichtingen.
+    \item \textbf{Ondersteuning:} Helpt aantonen dat een organisatie een systematische en documenteerbare aanpak heeft voor cybersecurity.
+\end{itemize}
+
+\subsubsection{IEC 62443}
+\begin{itemize}
+    \item \textbf{Wat het is:} Normenserie gericht op beveiliging van industriële besturingssystemen (OT), zoals SCADA en IoT-systemen.
+    \item \textbf{Relevantie voor NIS2:} NIS2 legt verantwoordelijkheden op voor OT en industriële systemen; IEC 62443 behandelt beveiligingslagen, toegangscontrole en netwerksegmentatie.
+    \item \textbf{Ondersteuning:} Biedt structuur voor OT-beveiliging en systematische risicobeheersing.
+\end{itemize}
+
+\subsubsection{NIST Cybersecurity Framework (CSF)}
+\begin{itemize}
+    \item \textbf{Wat het is:} Vrijwillig kader dat helpt bij identificatie, bescherming, detectie, reactie en herstel van cyberrisico's.
+    \item \textbf{Relevantie voor NIS2:} Ondersteunt proactieve cybersecuritymaatregelen en incidentrespons.
+    \item \textbf{Ondersteuning:} Geschikt voor maturity-assessments, gap-analyse en verbeterprogramma's.
+\end{itemize}
+
+\subsubsection{ENISA-aanbevelingen}
+\begin{itemize}
+    \item \textbf{Wat het is:} Europese richtlijnen en best practices voor cybersecurity in kritieke infrastructuren.
+    \item \textbf{Relevantie voor NIS2:} Biedt sector-specifieke richtlijnen, incidentrapportageformats en technische maatregelen.
+    \item \textbf{Ondersteuning:} Praktisch hulpmiddel voor interpretatie van NIS2 en opstellen van interne policies.
+\end{itemize}
+ \autocite{SSH_IEC} 
+
+\subsection{Specifieke uitdagingen binnen de energiesector}
+Energiebedrijven ondervinden verschillende uitdagingen bij het naleven van NIS2, vooral door de combinatie van IT- en OT-systemen \cite{OrangeCyberDefense}. De integratie van IT- en OT-systemen is complex, omdat OT-systemen traditioneel fysiek gericht zijn en hoge beschikbaarheid vereisen, terwijl IT-cybersecuritymaatregelen extra kwetsbaarheden kunnen tonen. Daarnaast is er vaak een gebrek aan zichtbaarheid in industriële systemen, die nauwelijks monitoring of logging bieden, waardoor risico's moeilijk detecteren zijn. Het tekort aan cybersecurity-expertise, vooral met kennis van zowel IT- als OT-security, vertraagt de implementatie en kan leiden tot suboptimale maatregelen.
+ \autocite{OrangeCyberDefense}
+
+\subsection{State-of-the-art beveiligingspraktijken in de energiesector}
+De voortdurende \textcolor{orange}{digitalisering} van de energiesector zorgt voor efficiëntere, maar ook complexere netwerken. Hierdoor ontstaan nieuwe kwetsbaarheden die vragen om een geïntegreerde benadering van beveiliging. Recente inzichten tonen aan dat moderne praktijken niet langer volstaan met traditionele informatiesecurity; de nadruk verschuift naar \textcolor{orange}{process security}, waarbij digitale en fysieke lagen samen worden beschermd. \autocite{TopsectorEnergie2025}
+
+Volgens experts van onder meer het \textcolor{orange}{European Network for Cybersecurity} en het \textcolor{orange}{Centrum voor Wiskunde en Informatica (CWI)} \textcite{TopsectorEnergie2025} rust effectieve cyberbeveiliging vandaag op drie pijlers: \textcolor{orange}{security by design}, \textcolor{orange}{kennisopbouw} en \textcolor{orange}{organisatiebrede verantwoordelijkheid}. Systemen moeten vanaf het ontwerp veilig zijn, medewerkers dienen bewust te zijn van risico’s, en het management moet cybersecurity strategisch verankeren. 
+
+Een veilige digitale infrastructuur vereist dus meer dan technologie alleen: ze steunt op \textcolor{orange}{bewustzijn} en samenwerking doorheen de volledige energieketen.  
+
+
+\subsection{Relevante bestaande onderzoeken en initiatieven}
+Een belangrijk vergelijkend onderzoek is de masterproef van \textcite{Linderoth2024}, waarin de impact van de NIS 2-richtlijn op de Zweedse energiesector wordt geanalyseerd. Op basis van interviews met energiebedrijven toont het onderzoek aan dat NIS 2 leidt tot:
+
+\begin{itemize}
+    \item Meer betrokkenheid van management bij informatiebeveiliging.
+    \item Systematischer werken met ISM-processen.
+    \item Uitdagingen rond compliance in de toeleveringsketen en beperkte middelen bij kleinere organisaties.
+\end{itemize}
+
+Daarnaast zijn beleidsinitiatieven zoals de \textbf{NIS 2-richtlijn (EU 2022/2555)} en het Zweedse wetsvoorstel \textbf{SOU 2024:18} relevant, evenals internationale normen zoals \textbf{ISO/IEC 27001}.
+
+Deze bronnen bieden een waardevolle context voor het begrijpen van de implementatie van NIS 2 in verschillende sectoren en lidstaten. \autocite{Linderoth2024}
+
+\subsection{Gaten en onderzoeksmotivatie}
+Hoewel er talrijke richtlijnen en beleidsdocumenten bestaan rond NIS2 en cybersecurity, blijkt uit de literatuur dat er weinig concrete, toepasbare \textcolor{orange}{implementatiekaders} voor de energiesector beschikbaar zijn. Er ontstaat een duidelijke kloof tussen theoretische aanbevelingen en de dagelijkse praktijk binnen energiebedrijven: veel maatregelen blijven op hoog abstractieniveau, waardoor operationele teams en management weinig houvast hebben bij uitvoering. \autocite{OrangeCyberDefense}
+
+
+
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+\subsection{Onderzoeksaanpak}
+Dit onderzoek valt onder de categorie van een \textbf{toegepaste risico-analyse en implementatieonderzoek}. Het doel is om te onderzoeken hoe een energiebedrijf zijn processen en maatregelen kan afstemmen op de \textcolor{orange}{NIS2-richtlijn}, en vervolgens een \textcolor{orange}{implementatiekader} te ontwikkelen dat toepasbaar is.
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+De methodologie bestaat uit drie hoofdfasen:
+\begin{enumerate}
+    \item \textbf{Literatuurstudie:} Analyse van de bepalingen van de \textcolor{orange}{NIS2-richtlijn} en relevante normen. Daarnaast wordt bestaande literatuur over cybersecuritybeheer in de energiesector onderzocht.    
+    \item \textbf{Analyse:} Een vergelijking tussen de huidige algemene gangbare beveiligingspraktijken in de energiesector en de vereisten uit de NIS2-richtlijn. Dit gebeurt aan de hand van een analyse Indien mogelijk wordt dit toegepast op een reëel energiebedrijf.
+    \item \textbf{Ontwikkeling van een implementatieplan:} Op basis van de bevindingen uit de vorige fasen wordt een concreet \textcolor{orange}{stappenplan} ontwikkeld. Dit plan bevat organisatorische, technische en beleidsmatige aanbevelingen NIS2-implementatiekader. 
+\end{enumerate}
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
 
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
 
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+\subsection{Onderzoekstechnieken en tools}
+Om de verschillende fasen van het onderzoek te ondersteunen, worden de volgende technieken en hulpmiddelen toegepast:
 
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+\begin{itemize}
+    \item \textbf{Documentanalyse} van richtlijnen, standaarden en bestaande beveiligingskaders.
+    \item \textbf{Risicoanalyse} aan de hand van methodieken zoals \textcolor{orange}{ISO 27005} of \textcolor{orange}{OCTAVE Allegro}, om gaten in beveiliging te identificeren.
+    \item \textbf{Modelontwikkeling} in de vorm van een implementatieroadmap (grafisch schema met fasering, verantwoordelijken en controlemomenten).
+    \item \textbf{Gebruik van tools:}
+    \begin{itemize}
+        \item \textbf{Draw.io} of \textbf{Creately} voor visualisaties;
+        \item \textbf{Microsoft Excel} voor risico- en compliance-mapping;      
+\end{itemize}
+
+
+
+\subsection{Technische diepgang}
+Hoewel het onderzoek beleidsmatig van aard is, wordt voldoende technische diepgang voorzien. Er zal onder meer onderzocht worden hoe beveiligingsprocessen zoals \textcolor{orange}{incidentdetectie}, \textcolor{orange}{logbeheer} en \textcolor{orange}{netwerksegmentatie} technisch kunnen worden ingericht om te voldoen aan de NIS2-richtlijn. 
+
+
+\subsection{Tijdsplanning en deliverables}
+
+Het onderzoek zal plaatsvinden tussen 20 oktober en 17 december 2025 en wordt opgesplitst in vier opeenvolgende fasen. 
+
+\textbf{Fase 1 – Literatuurstudie (20 oktober – 5 november)} \\
+In deze eerste fase wordt een uitgebreide literatuurstudie uitgevoerd naar de NIS2-richtlijn en de bijhorende veiligheidsnormen binnen de energiesector. Het resultaat van deze fase is een overzicht van de belangrijkste NIS2-vereisten en relevante normen die richtinggevend zijn voor het verdere onderzoek.
+
+\vspace{0.3cm}
+
+\textbf{Fase 2 – Analyse (5 – 15 november)} \\
+Tijdens deze fase wordt onderzocht welke hiaten bestaan tussen de huidige beveiligingspraktijken en de eisen van de NIS2-richtlijn. De deliverable van deze fase is een analyseverslag waarin de geïdentificeerde tekortkomingen en risico’s duidelijk worden weergegeven.
+
+\vspace{0.3cm}
+
+\textbf{Fase 3 – Ontwerp van het implementatiekader (15 november – 10 december)} \\
+Op basis van de resultaten uit de analysefase wordt een conceptueel implementatieplan ontwikkeld. Dit plan bevat een roadmap met zowel organisatorische als technische aanbevelingen die energiebedrijven kunnen helpen om stapsgewijs NIS2-conform te worden.
+
+\vspace{0.3cm}
+
+\textbf{Fase 4 – Eindrapport en presentatie (10 – 17 december)} \\
+In de laatste fase worden alle onderzoeksresultaten samengebracht in een definitief implementatieplan. Deze fase wordt afgesloten met de opmaak en verdediging van het eindrapport, waarin de aanbevelingen en bevindingen worden gepresenteerd.
+
+
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+Het primaire resultaat van deze bachelorproef is een concreet en toepasbaar \textcolor{orange}{implementatieplan} dat energiebedrijven ondersteunt bij hun traject naar \textcolor{orange}{NIS2-conformiteit}. Dit plan omvatte een overzicht van de gaten tussen de huidige beveiligingspraktijken en de NIS2-vereisten (\textcolor{orange}{analyse}), organisatorische maatregelen zoals rollen, verantwoordelijkheden en interne procedures, evenals technische maatregelen zoals incidentdetectie, logbeheer, netwerksegmentatie en risico-opvolging. Daarnaast werd een gestructureerde roadmap uitgewerkt.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+\vspace{0.5cm}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Op basis van dit implementatiekader wordt verwacht dat energiebedrijven een duidelijk inzicht krijgen in hun huidige NIS2 en de gaten die aangepakt moeten worden. De roadmap zal organisaties helpen bij maatregelen en het plannen van concrete acties, zodat IT-professionals en beleidsmakers binnen de organisatie een praktische leidraad hebben om compliance aantoonbaar te maken.
+
+\vspace{0.5cm}
+De meerwaarde van deze bachelorproef ligt in de directe toepasbaarheid van het implementatiekader. Het biedt \textcolor{orange}{IT-professionals} en \textcolor{orange}{cybersecurityverantwoordelijken} binnen energiebedrijven een concrete tool om de complexiteit van NIS2-conformiteit te reduceren. 
 
